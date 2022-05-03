@@ -4,13 +4,17 @@ import java.util.regex.Pattern;
 import java.util.Scanner;
 
 public class UserRegisterTest{
-
-
     /*
      * isValidFirstName method created in which First Name starts with Cap and has minimum 3 Characters.
      */
     public static boolean isValidFirstName(String firstName) {
         return Pattern.matches("^[A-Z]{1}[a-z]{2,}$",firstName);
     }
-}
 
+    /*
+     * lastName method created in which Last Name starts with Cap and has minimum 3 Characters.
+     */
+    public static boolean isValidLastName(String lastName) {
+        return Pattern.matches("^[A-Z]{1}[a-z]{2,}$", lastName);
+    }
+}

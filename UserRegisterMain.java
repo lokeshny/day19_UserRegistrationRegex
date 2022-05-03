@@ -10,23 +10,18 @@
 package com.Bridgelab.day19_Regex;
 
 import java.util.Scanner;
-import java.util.regex.Pattern;
 
 public class UserRegisterMain{
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Enter First Name: ");
+            String firstName = scanner.nextLine();
+            // method calling to check whether the name is written in proper way or not.
+            System.out.println(UserRegisterTest.isValidFirstName(firstName));
 
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter First Name: ");
-        String firstName = scanner.nextLine();
-        // method calling to check whether the name is written in proper way or not.
-        System.out.println(UserRegisterMain.isValidFirstName(firstName));
+            System.out.println("Enter Last Name: ");
+            String lastName = scanner.nextLine();
+            System.out.println(UserRegisterTest.isValidLastName(lastName));
+        }
     }
-
-    private static boolean isValidFirstName(String firstName) {
-        return Pattern.matches("^[A-Z]{1}[a-z]{2,}$",firstName);
-    }
-
-
-}
 
