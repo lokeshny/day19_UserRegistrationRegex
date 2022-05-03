@@ -31,5 +31,8 @@ public class UserRegisterMain{
         String phoneNumber = scanner.nextLine();
         System.out.println(UserRegisterTest.isValidPhoneNumber(phoneNumber));
 
+        System.out.println("Enter Password: ");
+        String password = scanner.nextLine();
+        System.out.println(UserRegisterTest.isValidPassword(password));
     }
 }
