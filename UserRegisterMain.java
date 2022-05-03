@@ -12,16 +12,19 @@ package com.Bridgelab.day19_Regex;
 import java.util.Scanner;
 
 public class UserRegisterMain{
-        public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Enter First Name: ");
-            String firstName = scanner.nextLine();
-            // method calling to check whether the name is written in proper way or not.
-            System.out.println(UserRegisterTest.isValidFirstName(firstName));
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter First Name: ");
+        String firstName = scanner.nextLine();
+        // method calling to check whether the name is written in proper way or not.
+        System.out.println(UserRegisterTest.isValidFirstName(firstName));
 
-            System.out.println("Enter Last Name: ");
-            String lastName = scanner.nextLine();
-            System.out.println(UserRegisterTest.isValidLastName(lastName));
-        }
+        System.out.println("Enter Last Name: ");
+        String lastName = scanner.nextLine();
+        System.out.println(UserRegisterTest.isValidLastName(lastName));
+
+        System.out.println("Enter Email: ");
+        String email = scanner.nextLine();
+        System.out.println(UserRegisterTest.isValidEmail(email));
     }
-
+}
