@@ -26,5 +26,10 @@ public class UserRegisterMain{
         System.out.println("Enter Email: ");
         String email = scanner.nextLine();
         System.out.println(UserRegisterTest.isValidEmail(email));
+
+        System.out.println("Enter phone Number with country code(space between country code and phone Number): ");
+        String phoneNumber = scanner.nextLine();
+        System.out.println(UserRegisterTest.isValidPhoneNumber(phoneNumber));
+
     }
 }
